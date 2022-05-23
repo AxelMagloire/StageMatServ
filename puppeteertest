@@ -1,0 +1,36 @@
+  //let bodyHTML = await page.evaluate(() => document.body.innerText);
+
+  //let result = await page.$$eval('ul', nodes => 
+  //nodes.filter(node => node.className === "ul").map(node => node.textContent)
+//);
+
+//const tagname = await document.querySelectorAll('div');
+
+  //const result = await page.evaluate(() => {
+  
+   // let all = document.querySelector('#more_info_tabs').textContent
+    //let img = document.querySelector('#bigpic').src
+   //return {all, img }}
+  // )
+
+  const text = await page.$eval("div > div > img", el => el.textContent);
+
+
+   
+//console.log(bodyHTML)
+//console.log(result)
+//console.log(tagname)
+console.log(text)
+
+
+
+
+const div1 = await page.$$("div > p", div1 => {
+ let tab1 = []
+  for (let z = 1; z < div1.length; z++){
+  tab2.push(tab1)
+  }
+
+});
+
+
